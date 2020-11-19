@@ -1,3 +1,11 @@
+environment {
+  SVC_ACCOUNT_KEY = credentials('jenkins-gcp')
+  PROJECT_ID = "auto-infra-20201119-student7xi"
+  DEFAULT_LOCAL_TMP = 'tmp/'
+  ANSIBLE_USER = 'ubuntu'
+  HOME='/tmp'
+}
+
 pipeline {
   agent any
   environment {
